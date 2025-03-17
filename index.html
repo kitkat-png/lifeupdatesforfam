@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Updates Website</title>
+    <link rel="icon" type="image/x-icon" href="favicon/CuhBG.ico">
+    <style>
+        @font-face {
+            font-family: Kitto;
+            src: url(kitto/Kitto-PersonalUse.otf);
+        }
+        body {
+            background-color: #b3ebf2;
+        }
+        h1 {
+            font-family: Kitto, sans-serif;
+            font-size: 50px;
+        }
+        header {
+            text-align: center;
+        }
+        header p, nav {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header p {
+            background-color: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        main {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        footer {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: small;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav li {
+            background-color: #ffd1dc;
+            width: max-content;
+            margin: auto;
+            padding: 5px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #c3405f;
+        }
+        nav a:hover {
+            font-style: italic;
+        }
+        main, header, footer {
+            width: 50%;
+            margin: auto;
+        }
+        main section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        #header-text-div {
+            background-image: url(drawings/header\ cloud.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;            
+        }
+        #about-me img {
+            float: left;
+            width: 200px;
+            margin: 15px;
+            border: #ffd1dc solid 10px;
+            border-radius: 5px;
+        }
+        #posts {
+            border: #ffd1dc solid 5px;
+            border-radius: 5px;
+            height: 300px;
+            overflow: scroll;
+            scrollbar-color: #ffd1dc #fff3f5;
+        }
+        #posts section {
+            background-color: #ffd1dc;
+            margin: 20px;
+        }
+        .date {
+            font-size: small;
+        }
+        /* 2xl */ @media (max-width: 1536px) {} 
+        /* xl */ @media (max-width: 1280px) {} 
+        /* lg */ 
+        @media (max-width: 1024px) {
+            main, header {
+                width: 60%;
+            }
+        } 
+        /* md */ 
+        @media (max-width: 768px) {
+            main, header {
+                width: 70%;
+            }
+        } 
+        /* sm */ @media (max-width: 640px) {}
+        /* xs */ 
+        @media (max-width: 475px) {
+            main, header {
+                width: 80%;
+            }
+        }
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-text-div">
+            <h1>Life Updates Website</h1>
+            <p>A single-page website I made since I was banned from Facebook a while ago but still wanna have a way to give my family little updates on how my life is going.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#life-updates">Life Updates</a></li>
+                <li><a href="#more-info">More Info About This Website</a></li>
+                <li><a href="#credits">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+
+            <img src="drawings/kitty-cat.png" alt="a dark gray cat with a smiley face with a pastel rainbow background">
+
+            <p>Hello, I'm a creature who loves things like cardboard boxes that are big enough to hide in, cats, front end web development, drawing, writing, and my favorite shows. My favorite shows are My Little Pony: Friendship is Magic and The Owl House, in case ya wanted to know.</p>
+
+            <p>Go to my <a href="https://en.pronouns.page/@smallkit">pronouns.page</a> to learn some other things about me. It contains some essential info about things like the pronouns I go by and the terms I prefer to name a few examples. It also contains more useful stuff like how to use those pronouns when talking and definitions of certain terms. And <a href="https://cara.app/microscopic-creature">here's a link to my art account on cara</a> if ya wanna see some art I made.</p>
+        </section>
+        <section id="life-updates">
+
+            <h2>Life Updates</h2>
+
+            <p>This section contains little updates. Most entries won't be very long if this goes according to plan. If an entry is longer than planned then it will have a read more button. Posts are in reverse-chronological order.</p>
+
+            <div id="posts">
+                <section>
+                    <h3>First post!</h3>
+                    <p class="date">Monday March 17th, 2025 - 3:25 PM</p>
+
+                    <p>Hello! This is my first life update post. Recently I've just been trying to keep my head above water. I'm still trying to figure out what I want to do. I was thinking I'd go to school for web development after I get my GED cuz I'm interested in that but I'm also kinda nervous about it.</p>
+                </section>
+                <section>
+                    <h3>Sample post to test scroll</h3>
+                    <p class="date">Date</p>
+
+                    <p>Text</p>
+                </section>
+            </div>
+        </section>
+        <section id="more-info">
+            <h2>More Info About This Site</h2>
+
+            <p>This website is made with my own two hands using HTML and CSS. It's also hosted for free using Github Pages.</p>
+
+            <p>When I got banned from Facebook it was for something related to identity. (I can't remember their exact phrasing) I honestly suspect that it was partially due to the fact that I changed my name a while back, but whatever. Anyway, Facebook is annoying anyway and I didn't have much reason to be on there, so I made this website to replace one of the only reasons I was on there.</p>
+
+            <p>Also, I wanted to make it so each section would have a cloud as its background image but I can't figure out a way to do that without having to resize it every time I add more text which would be annoying. If ya got any advice when it comes to that let me know. Also the background image on the header text doesn't look good on a bunch of screen sizes and I dunno how to fix that.</p>
+        </section>
+        <section id="credits">
+            <h2>Credits</h2>
+            <p>A credits page for me to give credit where credit is due.</p>
+
+            <ul>
+                <li><a href="https://blog.hubspot.com/website/center-div-css">This article</a> keeps helping me remember how to center a div.</li>
+                <li><a><a href="https://www.heyfonts.com/display/kitto-cute-free-font/">This</a> is the font used for the first header text. It was made by Helotype and the font is called Kitto Katto.</li>
+                <li>The favicon is some random silly cat picture that I'm not sure of the origin of.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Everything on this site was created by me unless stated otherwise.</p>
+        <p>Hosted on Github Pages.</p>
+    </footer>
+</body>
+</html>
